@@ -1,0 +1,22 @@
+*{
+    font-size: 2vmin;
+    font-family: Helvetica Neue;
+
+}
+span{
+    margin: 5px;
+}
+.total>div{
+    margin-top: 10px;
+    color: red;
+}
+.itog{
+    color: black;
+}
+.input_years{
+    margin: 10px;
+    margin-top: 20px;
+}
+.pribl_year{
+    margin: 2px;
+}
