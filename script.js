@@ -109,27 +109,33 @@ const div_VND=document.querySelector(".div_VND");
 const div_Tok=document.querySelector(".div_Tok");
 const div_Tdok=document.querySelector(".div_Tdok");
 ChDD.onclick=function(){
+    div_ChDD.innerHTML='';
+    div_ChDD.innerHTML+='<span class="itog">ЧДД=</span>';
     const pribl_year=document.querySelectorAll(".pribl_year");
     let proc=Number(procent.value);
     div_ChDD.innerHTML+=ChDD_f(proc,pribl_year,Invest)+'Д.е.';
 
 }
 ID.onclick=function(){
+    div_ID.innerHTML='<span class="itog">ИД=</span>';
     const pribl_year=document.querySelectorAll(".pribl_year");
     let proc=Number(procent.value);
     div_ID.innerHTML+=ID_f(proc,pribl_year,Invest);
 }
 VND.onclick=function(){
+    div_VND.innerHTML='<span class="itog">ВНД=</span>';
     const pribl_year=document.querySelectorAll(".pribl_year");
     let proc=Number(procent.value);
     div_VND.innerHTML+=VND_f(proc,pribl_year,Invest)+'%';
 }
 Tok.onclick=function(){
+    div_Tok.innerHTML='<span class="itog">Т<sub>ок</sub>=</span>';
     const pribl_year=document.querySelectorAll(".pribl_year");
     let proc=Number(procent.value);
     div_Tok.innerHTML+=Tok_f(proc,pribl_year,Invest)+'лет';
 }
 Tdok.onclick=function(){
+    div_Tdok.innerHTML='<span class="itog">Т<sup>д</sup><sub>ок</sub>=</span>';
     const pribl_year=document.querySelectorAll(".pribl_year");
     let proc=Number(procent.value);
     div_Tdok.innerHTML+=Tdok_f(proc,pribl_year,Invest)+'лет';
